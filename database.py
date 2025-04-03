@@ -4,7 +4,7 @@ from sqlalchemy.orm import sessionmaker
 
 
 
-URL = "postgresql://postgres:test1234!@localhost/MarioDatabase"
+URL = "postgresql://database_deployment_user:sQVwuvwqQO5Y8SZ8ev1xedN5pnzzmq1f@dpg-cvars6qj1k6c7390nheg-a.frankfurt-postgres.render.com/database_deployment"
 engine = create_engine(URL)
 Base = declarative_base()
 SessionLocal = sessionmaker(autoflush=False, autocommit= False, bind=engine)
